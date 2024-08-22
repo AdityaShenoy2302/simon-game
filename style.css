@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+h1{
+    margin: 2rem;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 1rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+    margin: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.yellow{
+    background-color: #f99b45;
+}
+
+.red{
+    background-color: #d95980;
+}
+
+.green{
+    background-color: #63aac0;
+}
+
+.purple{
+    background-color: #819ff9;
+}
+
+.flash{
+    opacity: 0.4;
+}
+
+/* For tablets and smaller desktops (screen width between 768px and 1024px) */
+@media (max-width: 1024px) {
+    .btn {
+        height: 150px;
+        width: 150px;
+        margin: 2rem;
+    }
+
+    h1 {
+        margin: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+/* For large smartphones and smaller tablets (screen width between 600px and 768px) */
+@media (max-width: 768px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+        margin: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For smartphones (screen width less than 600px) */
+@media (max-width: 600px) {
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
